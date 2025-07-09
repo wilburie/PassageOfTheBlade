@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://k5b7enuq12xo"]
+
+[ext_resource type="Texture2D" uid="uid://cugsan65odcl2" path="res://icon.svg" id="1_06t4h"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="Goober" type="Sprite2D" parent="."]
+position = Vector2(533, 319)
+scale = Vector2(3.3125, 1)
+texture = ExtResource("1_06t4h")
