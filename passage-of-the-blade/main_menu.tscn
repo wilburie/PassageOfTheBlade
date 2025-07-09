@@ -1,10 +1,28 @@
-[gd_scene load_steps=2 format=3 uid="uid://k5b7enuq12xo"]
+[gd_scene load_steps=3 format=3 uid="uid://k5b7enuq12xo"]
 
-[ext_resource type="Texture2D" uid="uid://cugsan65odcl2" path="res://icon.svg" id="1_06t4h"]
+[ext_resource type="FontFile" uid="uid://mloqopdj24ow" path="res://Fonts/Geo-Regular.ttf" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://c8b7r6gcocecg" path="res://Scripts/playbutton.gd" id="2_7vrkn"]
 
 [node name="MainMenu" type="Node2D"]
 
-[node name="Goober" type="Sprite2D" parent="."]
-position = Vector2(533, 319)
-scale = Vector2(3.3125, 1)
-texture = ExtResource("1_06t4h")
+[node name="PlayButton" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 440.0
+offset_top = 296.0
+offset_right = 685.0
+offset_bottom = 377.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("1_06t4h")
+theme_override_font_sizes/font_size = 45
+action_mode = 0
+text = "Play"
+script = ExtResource("2_7vrkn")
+
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_pressed"]
