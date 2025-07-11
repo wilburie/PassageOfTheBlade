@@ -2,9 +2,9 @@
 
 [ext_resource type="FontFile" uid="uid://mloqopdj24ow" path="res://Fonts/Geo-Regular.ttf" id="1_06t4h"]
 [ext_resource type="Script" uid="uid://c8b7r6gcocecg" path="res://Scripts/playbutton.gd" id="2_7vrkn"]
-[ext_resource type="Script" uid="uid://yxfpheu42f5n" path="res://host_button.gd" id="3_jix8l"]
-[ext_resource type="Script" uid="uid://dg03bvkspxc30" path="res://join_button.gd" id="4_glbon"]
-[ext_resource type="Script" uid="uid://d0vc52l2swa0v" path="res://text_edit.gd" id="5_glbon"]
+[ext_resource type="Script" path="res://host_button.gd" id="3_jix8l"]
+[ext_resource type="Script" path="res://join_button.gd" id="4_glbon"]
+[ext_resource type="Script" path="res://text_edit.gd" id="5_glbon"]
 
 [node name="MainMenu" type="Node2D"]
 
